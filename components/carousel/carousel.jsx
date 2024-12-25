@@ -33,6 +33,7 @@ export default function CarouselComponent() {
                   <Image
                     src={`/carousel/${index + 1}.png`}
                     alt={`Carousel image ${index + 1}`}
+                    priority
                     width={600}
                     height={600}
                     className="object-cover w-full h-full rounded-xl"
