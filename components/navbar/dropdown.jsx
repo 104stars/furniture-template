@@ -18,7 +18,7 @@ export default function DropdownMenuDemo({ children }) {
         <DropdownMenuGroup>
           <DropdownMenuItem>Profile</DropdownMenuItem>
           <DropdownMenuItem>Settings</DropdownMenuItem>
-          <DropdownMenuItem>Earnings</DropdownMenuItem>
+          <DropdownMenuItem>Feedback</DropdownMenuItem>
           <DropdownMenuSeparator className="bg-gray-200" />
           <DropdownMenuItem>Sign out</DropdownMenuItem>
         </DropdownMenuGroup>

@@ -18,12 +18,12 @@ export default function CustomCarousel() {
       autoplay={{ delay: 2500, disableOnInteraction: false }}
       loop
       spaceBetween={20}
-      className="w-full max-w-xl select-none rounded-xl"
+      className="w-full max-w-xl select-none rounded-xl drop-shadow-xl"
       onSwiper={(swiper) => (swiperRef.current = swiper)}
     >
       {Array.from({ length: 6 }).map((_, index) => (
         <SwiperSlide key={index}>
-          <div className="p-1 rounded-xl">
+          <div className="p-1 rounded-xldrop-shadow-lg" >
             <Card>
               <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden rounded-xl">
                 <Image

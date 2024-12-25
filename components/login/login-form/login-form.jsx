@@ -125,7 +125,7 @@ export default function LoginForm() {
                 Remember me
               </Label>
             </div>
-            <Link href="/hero-section" passHref>
+            <Link href="/landing" passHref>
               <Button type="button" className="w-full mt-5 rounded-full bg-slate-700">
                 Sign In
               </Button>
