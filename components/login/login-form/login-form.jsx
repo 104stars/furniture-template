@@ -63,7 +63,7 @@ export default function LoginForm() {
       <h2 className="font-montserrat text-xl font-normal mb-6">
         Sign In to Get Started
       </h2>
-      <Card className="w-[350px] font-inter backdrop-blur-md bg-white bg-opacity-40 shadow-xl">
+      <Card className="w-[350px] font-inter backdrop-blur-xl bg-transparent shadow-xl brightness-110	">
         <CardHeader>
           <CardTitle>Login</CardTitle>
           <CardDescription>
