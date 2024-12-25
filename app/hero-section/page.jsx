@@ -1,24 +1,29 @@
 import Navbar from "@/components/navbar/navbar";
 import CarouselComponent from "@/components/carousel/carousel";
+import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   return (
-    <>
-      <Navbar className="fixed top-0 z-10" />
-      <section className="flex flex-row items-center align-center justify-center gap-x-20 py-20">
-        <div>
-          <h1 className="text-7xl font-inter font-bold max-w-[600px] text-left">
+    <div className="relative min-h-screen">
+      <Navbar className="absolute top-0 left-0 right-0 z-10" />
+      <main className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20 py-20 px-4 lg:px-8 ">
+        <div className="max-w-2xl">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-inter font-bold text-left">
             Transform Your Home Into a Sanctuary
           </h1>
-          <p className="text-2xl font-inter text-left max-w-[700px] text-gray-500 mt-6">
+          <p className="text-xl md:text-2xl font-inter text-left text-gray-500 mt-6">
             Transform your space with our curated collection of sustainable,
             artisan-crafted furniture and decor.
           </p>
+          <div className="flex space-x-6 sm:space-x-5 md:space-x-5 lg:space-x-30 mt-6">
+            <Button>Shop Now</Button>
+            <Button variant="outline">Learn More</Button>
+          </div>
         </div>
-        <div>
-          <CarouselComponent/>
+        <div className="w-full max-w-2xl justify-center">
+          <CarouselComponent />
         </div>
-      </section>
-    </>
+      </main>
+    </div>
   );
 }
