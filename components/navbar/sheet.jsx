@@ -13,7 +13,7 @@ export default function SheetDemo({ children }) {
   return (
     <Sheet className="xl:hidden">
       <SheetTrigger asChild>{children}</SheetTrigger>
-      <SheetContent className="w-[100px] sm:w-[280px] backdrop-blur-md bg-white/80 ">
+      <SheetContent className="backdrop-blur-md bg-white/80 ">
         <SheetHeader>
           <SheetTitle className="font-inter font-bold">Menu</SheetTitle>
         </SheetHeader>
