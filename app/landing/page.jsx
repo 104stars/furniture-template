@@ -15,15 +15,15 @@ export default function HeroSection() {
       <main className="relative min-h-screen">
         <MainSection />
       </main>
-      <Separator className="w-full drop-shadow-md z-20" />
+      <Separator className="w-full drop-shadow-md" />
       <section>
         <SecondSection />
       </section>
-      <Separator className="w-full drop-shadow-md z-20" />
+      <Separator className="w-full drop-shadow-md" />
       <section>
         <ThirdSection />
       </section>
-      <Separator className="w-full drop-shadow-md z-20" />
+      <Separator className="w-full drop-shadow-md" />
       <section>
         <FooterSection />
       </section>
