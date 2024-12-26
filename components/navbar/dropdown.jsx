@@ -16,11 +16,11 @@ export default function DropdownMenuDemo({ children }) {
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator className="bg-gray-200" />
         <DropdownMenuGroup>
-          <DropdownMenuItem>Profile</DropdownMenuItem>
-          <DropdownMenuItem>Settings</DropdownMenuItem>
-          <DropdownMenuItem>Feedback</DropdownMenuItem>
+          <DropdownMenuItem className="hover:underline">Profile</DropdownMenuItem>
+          <DropdownMenuItem className="hover:underline">Settings</DropdownMenuItem>
+          <DropdownMenuItem className="hover:underline">Feedback</DropdownMenuItem>
           <DropdownMenuSeparator className="bg-gray-200" />
-          <DropdownMenuItem>Sign out</DropdownMenuItem>
+          <DropdownMenuItem className="hover:underline">Sign out</DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>

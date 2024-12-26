@@ -4,9 +4,9 @@ import DropdownMenuDemo from "./dropdown";
 export default function AvatarDropdown() {
   return (
     <DropdownMenuDemo>
-      <Avatar>
-        <AvatarImage src="https://pbs.twimg.com/profile_images/1345731173918658566/33fSVbuc_400x400.jpg" alt="@shadcn" />
-        <AvatarFallback>CN</AvatarFallback>
+      <Avatar className="cursor-pointer">
+        <AvatarImage src="https://pbs.twimg.com/media/GdZZJ6paoAAo5bU?format=jpg&name=large" alt="@shadcn" />
+        <AvatarFallback>XD</AvatarFallback>
       </Avatar>
     </DropdownMenuDemo>
   );

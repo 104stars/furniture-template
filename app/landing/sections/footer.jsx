@@ -7,10 +7,10 @@ export default function FooterSection() {
   return (
     <>
       <section className="flex w-full flex-col items-center justify-center gap-6 sm:gap-8 lg:gap-10 py-8 sm:py-12 px-4 lg:px-8 bg-neutral-800">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center font-inter font-bold max-w-2xl text-gray-50 leading-snug sm:leading-normal">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl text-center font-inter font-bold max-w-2xl text-gray-50 ">
           Let's create beautiful spaces together
         </h2>
-        <p className="text-base font-inter sm:text-lg text-gray-50 max-w-xl text-center leading-relaxed">
+        <p className="text-base font-inter sm:text-lg text-gray-50 max-w-xl text-center">
           Subscribe for weekly interior design tips, behind-the-scenes looks at
           our artisans' workshops, and members-only offers. Your sanctuary
           awaits.

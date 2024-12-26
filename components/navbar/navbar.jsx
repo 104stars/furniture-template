@@ -1,32 +1,24 @@
-import {
-  NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuLink,
-} from "@/components/ui/navigation-menu";
+"use client";
 import Link from "next/link";
 import AvatarComponent from "./avatar";
-import DropdownMenuDemo from "./dropdown";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-} from "@radix-ui/react-dropdown-menu";
+import { Separator } from "@/components/ui/separator";
+import { List, Cube } from "@phosphor-icons/react/dist/ssr";
+import { useState } from "react";
+import Burger from "./burger";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className=" sticky top-0 z-10 w-full border-b flex items-center justify-between p-3 pr-10 backdrop-blur-md bg-gray-100 bg-opacity-70	">
-      <h1 className="flex text-2xl font-montserrat font-bold text-gray-900 dark:text-gray-100">
-        MyApp
-      </h1>
-      <div className="flex gap-7 items-center font-inter">
-        <Link href="/" className="border border-transparent hover:underline p-1 px-3 rounded-full">Home</Link>
-        <Link href="#" className="border border-transparent hover:underline p-1 px-3 rounded-full">Features</Link>
-        <Link href="#" className="border border-transparent hover:underline p-1 px-3 rounded-full">Contact</Link>
-        <DropdownMenuDemo>
-        <DropdownMenuTrigger>
-          <AvatarComponent  />
-        </DropdownMenuTrigger>
-        </DropdownMenuDemo>
-      </div>
-    </div>
+    <header className="flex sticky top-0 z-20 w-full border-b justify-between items-center p-2 px-10 md:px-10 backdrop-blur-md bg-gray-100 bg-opacity-70 ">
+      <Cube size={40} className="cursor-pointer pt-1"></Cube>
+      <ul className="hidden xl:flex items-center gap-12 font-inter">
+        <li className="p-3 hover:underline cursor-pointer">Home</li>
+        <li className="p-3 hover:underline cursor-pointer">Features</li>
+        <li className="p-3 hover:underline cursor-pointer">Explore</li>
+        <li className="p-3 hover:underline cursor-pointer">Contact</li>
+        <AvatarComponent />
+      </ul>
+      <Burger/>
+    </header>
   );
 }

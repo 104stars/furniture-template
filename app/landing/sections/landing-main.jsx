@@ -3,7 +3,7 @@ import CarouselComponent from "@/components/carousel/carousel";
 
 export default function MainSection() {
   return (
-    <main className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20 py-20 px-4 lg:px-8 ">
+    <main className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 py-20 px-4 lg:px-8 ">
       <div className="max-w-2xl">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-inter font-bold text-left">
           Transform your home into a sanctuary

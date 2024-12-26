@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LoginBackground({ children }) {
   return (
-    <div>
+    <div >
       {/* Wave SVG background */}
       <div className="absolute bottom-0 right-0 z-0">
         <Image
