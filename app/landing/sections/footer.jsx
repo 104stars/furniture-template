@@ -19,7 +19,7 @@ export default function FooterSection() {
           <Input
             type="email"
             placeholder="Enter your email"
-            className="text-inter text-gray-900 w-full sm:w-auto"
+            className="text-inter text-white w-full sm:w-auto"
           />
           <Button variant="outline" className="w-full sm:w-auto text-sm sm:text-base font-normal font-inter">
             Sign Me Up
