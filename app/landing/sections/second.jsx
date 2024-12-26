@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function SecondSection() {
   return (
-    <section className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
+    <section className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-zinc-100">
       <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-20">
         <div className="w-full lg:w-1/2 space-y-6">
           <div className="text-sm text-gray-500 font-inter">Durable</div>
