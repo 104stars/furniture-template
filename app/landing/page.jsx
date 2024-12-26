@@ -11,19 +11,19 @@ import FooterSection from "./sections/footer";
 export default function HeroSection() {
   return (
     <div>
+      <Navbar />
       <main className="relative min-h-screen">
-        <Navbar/>
         <MainSection />
       </main>
-      <Separator className="w-full drop-shadow-md" />
+      <Separator className="w-full drop-shadow-md z-20" />
       <section>
         <SecondSection />
       </section>
-      <Separator className="w-full drop-shadow-md" />
+      <Separator className="w-full drop-shadow-md z-20" />
       <section>
         <ThirdSection />
       </section>
-      <Separator className="w-full drop-shadow-md" />
+      <Separator className="w-full drop-shadow-md z-20" />
       <section>
         <FooterSection />
       </section>

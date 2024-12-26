@@ -27,7 +27,8 @@ export default function CustomCarousel() {
             <Card className="">
               <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden rounded-xl">
                 <Image
-                  priority
+                  priority={true}
+                  quality={100}
                   src={`/carousel/${index + 1}.png`}
                   alt={`Carousel image ${index + 1}`}
                   fill

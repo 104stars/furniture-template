@@ -3,7 +3,7 @@ import CarouselComponent from "@/components/carousel/carousel";
 
 export default function MainSection() {
   return (
-    <main className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 py-20 px-4 lg:px-8 ">
+    <main className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 py-20 px-4 lg:px-8 bg-gray-50">
       <div className="max-w-2xl">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-inter font-bold text-left">
           Transform your home into a sanctuary
@@ -13,8 +13,8 @@ export default function MainSection() {
           artisan-crafted furniture and decor.
         </p>
         <div className="flex space-x-6 sm:space-x-5 md:space-x-5 lg:space-x-30 mt-6">
-          <Button className="font-inter font-light">Shop Now</Button>
-          <Button variant="outline" className="font-inter font-light">
+          <Button className="font-inter font-normal">Shop Now</Button>
+          <Button variant="outline" className="font-inter font-normal">
             Learn More
           </Button>
         </div>
