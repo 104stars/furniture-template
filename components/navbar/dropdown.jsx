@@ -8,6 +8,15 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import {
+  User,
+  Gear,
+  ChatCircleDots,
+  SignOut,
+} from "@phosphor-icons/react/dist/ssr";
+
+import Link from "next/link";
+
 export default function DropdownMenuDemo({ children }) {
   return (
     <DropdownMenu>
@@ -15,12 +24,26 @@ export default function DropdownMenuDemo({ children }) {
       <DropdownMenuContent className="w-56 font-inter">
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator className="bg-gray-200" />
-        <DropdownMenuGroup>
-          <DropdownMenuItem className="hover:underline">Profile</DropdownMenuItem>
-          <DropdownMenuItem className="hover:underline">Settings</DropdownMenuItem>
-          <DropdownMenuItem className="hover:underline">Feedback</DropdownMenuItem>
+        <DropdownMenuGroup className="">
+          <DropdownMenuItem className="hover:underline text-md ">
+            <User />
+            Profile
+          </DropdownMenuItem>
+          <DropdownMenuItem className="hover:underline text-md ">
+            <Gear />
+            Settings
+          </DropdownMenuItem>
+          <DropdownMenuItem className="hover:underline text-md ">
+            <ChatCircleDots />
+            Feedback
+          </DropdownMenuItem>
           <DropdownMenuSeparator className="bg-gray-200" />
-          <DropdownMenuItem className="hover:underline">Sign out</DropdownMenuItem>
+          <DropdownMenuItem className="hover:underline text-red-500 text-md ">
+            <Link href="/" className="hover:text-red-900 flex items-center gap-2">
+              <SignOut />
+              Sign out
+            </Link>
+          </DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>

@@ -10,9 +10,11 @@ import FooterSection from "./sections/footer";
 
 export default function HeroSection() {
   return (
-    <div>
-      <Navbar />
-      <main className="relative min-h-screen">
+    <>
+      <div className="sticky top-0 z-20">
+        <Navbar />
+      </div>
+      <main className=" h-screen">
         <MainSection />
       </main>
       <Separator className="w-full drop-shadow-md" />
@@ -27,6 +29,6 @@ export default function HeroSection() {
       <section>
         <FooterSection />
       </section>
-    </div>
+    </>
   );
 }
