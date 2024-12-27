@@ -14,7 +14,7 @@ export default function HeroSection() {
       <div className="sticky top-0 z-20">
         <Navbar />
       </div>
-      <main className=" h-screen">
+      <main >
         <MainSection />
       </main>
       <Separator className="w-full drop-shadow-md" />
