@@ -37,7 +37,7 @@ export default function CustomCarousel() {
         } transition-opacity duration-300`}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
-        {Array.from({ length: 6 }).map((_, index) => (
+        {Array.from({ length: 7 }).map((_, index) => (
           <SwiperSlide key={index}>
             <div className="p-1 rounded-xl">
               <Card>
