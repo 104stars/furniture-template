@@ -12,11 +12,10 @@ export default function MainSection() {
           Upgrade your space with our curated collection of sustainable,
           artisan-crafted furniture and decor.
         </p>
-        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-6 sm:mt-8">
-          <Button className="font-inter font-normal w-full sm:w-auto">Shop Now</Button>
-          <Button variant="outline" className="font-inter font-normal w-full sm:w-auto">
-            Learn More
-          </Button>
+        <div className="flex flex-row space-x-5 pt-6">
+          <Button className="font-normal font-inter">Shop Now</Button>
+          <Button variant="outline" className="font-normal font-inter">Learn More</Button>
+
         </div>
       </div>
       <div className="w-full max-w-2xl lg:max-w-3xl mt-8 lg:mt-0">
@@ -25,4 +24,3 @@ export default function MainSection() {
     </main>
   );
 }
-

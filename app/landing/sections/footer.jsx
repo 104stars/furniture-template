@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
-
+import EmailInput from "@/components/emailinput/emailinput";
 export default function FooterSection() {
   return (
     <>
@@ -15,13 +15,9 @@ export default function FooterSection() {
           our artisans' workshops, and members-only offers. Your sanctuary
           awaits.
         </p>
-        <div className="flex w-full max-w-sm flex-col sm:flex-row items-center justify-center gap-4 sm:gap-2">
-          <Input
-            type="email"
-            placeholder="Enter your email"
-            className="text-inter text-white w-full sm:w-auto"
-          />
-          <Button variant="outline" className="w-full sm:w-auto text-sm sm:text-base font-normal font-inter">
+        <div className="flex flex-col justify-center items-center gap-y-4 ">
+          <EmailInput />
+          <Button variant="outline" className="font-inter">
             Sign Me Up
           </Button>
         </div>
