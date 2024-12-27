@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import EmailInput from "@/components/emailinput/emailinput";
@@ -15,7 +14,7 @@ export default function FooterSection() {
           our artisans' workshops, and members-only offers. Your sanctuary
           awaits.
         </p>
-        <div className="flex flex-col justify-center items-center gap-y-4 ">
+        <div className="flex flex-col xl:flex-row gap-4 justify-center items-center  ">
           <EmailInput />
           <Button variant="outline" className="font-inter">
             Sign Me Up
