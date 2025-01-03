@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function ThirdSection() {
   return (
-    <section className="py-12 sm:py-20 lg:py-28 px-4 sm:px-6 lg:px-8 ">
+    <section className="py-12 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-12">
           {/* Content Section */}

@@ -9,7 +9,7 @@ import ThirdSection from "./sections/third";
 import FooterSection from "./sections/footer";
 import Reviews from "./sections/reviews";
 
-export default function HeroSection() {
+export default function LandingPage() {
   return (
     <>
       <div className="sticky top-0 z-20">

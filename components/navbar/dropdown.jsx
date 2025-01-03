@@ -39,7 +39,7 @@ export default function DropdownMenuDemo({ children }) {
           </DropdownMenuItem>
           <DropdownMenuSeparator className="bg-gray-200" />
           <DropdownMenuItem className="hover:underline text-red-500 text-md ">
-            <Link href="/" className="hover:text-red-900 flex items-center gap-2">
+            <Link href="/login" className="hover:text-red-900 flex items-center gap-2">
               <SignOut />
               Sign out
             </Link>
