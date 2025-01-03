@@ -7,6 +7,7 @@ import MainSection from "./sections/landing-main";
 import SecondSection from "./sections/second";
 import ThirdSection from "./sections/third";
 import FooterSection from "./sections/footer";
+import Reviews from "./sections/reviews";
 
 export default function HeroSection() {
   return (
@@ -14,7 +15,8 @@ export default function HeroSection() {
       <div className="sticky top-0 z-20">
         <Navbar />
       </div>
-      <main >
+
+      <main>
         <MainSection />
       </main>
       <Separator className="w-full drop-shadow-md" />
@@ -26,6 +28,11 @@ export default function HeroSection() {
         <ThirdSection />
       </section>
       <Separator className="w-full drop-shadow-md" />
+
+      <section>
+        <Reviews />
+      </section>
+
       <section>
         <FooterSection />
       </section>
