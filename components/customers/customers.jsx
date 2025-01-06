@@ -52,7 +52,7 @@ export default function CustomerReviews() {
             <CardContent className="flex-grow">
               <div>
               <p className="font-bold text-md">{review.item}</p>
-              <p className="max-w-md font-light pt-2 max-h-[130px] overflow-y-scroll">{review.description}</p>
+              <p className="max-w-md font-light pt-2 max-h-[130px] overflow-y-scroll lg:overflow-hidden">{review.description}</p>
               </div>
             </CardContent>
           </Card>
