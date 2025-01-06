@@ -2,14 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import EmailInput from "@/components/emailinput/emailinput";
-import {
-  InstagramLogo,
-  TwitterLogo,
-  FacebookLogo,
-  PinterestLogo,
-  TiktokLogo,
-  YoutubeLogo,
-} from "@phosphor-icons/react/dist/ssr";
+import SocialMedia from "@/components/socialmedia/ssm";
+
 export default function FooterSection() {
   return (
     <>
@@ -28,31 +22,8 @@ export default function FooterSection() {
             Sign Me Up
           </Button>
         </div>
-        <div className="flex flex-col items-center pt-10">
-          <h2 className="text-gray-50 font-inter font-semibold text-xl">Follow us</h2>
-          <div className="flex space-x-10 max-sm:space-x-0 " >
-            <div className="hover:bg-gray-700 cursor-pointer rounded-full p-2 max-sm:p-1">
-              <InstagramLogo size={30} color="white"/>
-            </div>
-            <div className="hover:bg-gray-700 cursor-pointer rounded-full p-2 max-sm:p-1">
-              <TwitterLogo size={30} color="white"/>
-            </div>
-            <div className="hover:bg-gray-700 cursor-pointer rounded-full p-2 max-sm:p-1">
-              <FacebookLogo size={30} color="white"/>
-            </div>
-            <div className="hover:bg-gray-700 cursor-pointer rounded-full p-2 max-sm:p-1">
-              <PinterestLogo size={30} color="white"/>
-            </div>
-            <div className="hover:bg-gray-700 cursor-pointer rounded-full p-2 max-sm:p-1">
-              <TiktokLogo size={30} color="white"/>
-            </div>
-            <div className="hover:bg-gray-700 cursor-pointer rounded-full p-2 max-sm:p-1">
-              <YoutubeLogo size={30} color="white"/>
-            </div>
-          </div>
-        </div>
+        <SocialMedia />
       </section>
-
       <Separator className="w-full bg-neutral-700" />
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0 p-4 sm:p-6 font-inter text-xs text-gray-50 bg-neutral-800">
         <p className="text-center sm:text-left">© 2024 All rights reserved.</p>

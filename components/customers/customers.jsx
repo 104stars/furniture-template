@@ -33,7 +33,7 @@ export default function CustomerReviews() {
     <div className="container mx-auto px-4 pt-8 pb-20 font-inter">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {reviews.map((review, index) => (
-          <Card key={index} className="flex flex-col w-full h-[270px] transition ease-linear hover:drop-shadow-lg">
+          <Card key={index} className="flex flex-col w-full h-[280px] transition ease-linear hover:drop-shadow-lg">
             <CardHeader>
               <div className="flex items-center space-x-4">
                 <Avatar>
@@ -52,7 +52,7 @@ export default function CustomerReviews() {
             <CardContent className="flex-grow">
               <div>
               <p className="font-bold text-md">{review.item}</p>
-              <p className="max-w-sm font-light pt-2 text-xs md:text-sm xl:text-base ">{review.description}</p>
+              <p className="max-w-md font-light pt-2 max-h-[130px] overflow-y-scroll">{review.description}</p>
               </div>
             </CardContent>
           </Card>
